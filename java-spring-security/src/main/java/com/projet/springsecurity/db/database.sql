@@ -8,7 +8,7 @@ CREATE TABLE `user` (
 GO
 
 
-INSERT INTO `spring`.`user`
+INSERT INTO `user`
 (`password`,
 `name`)
 VALUES
