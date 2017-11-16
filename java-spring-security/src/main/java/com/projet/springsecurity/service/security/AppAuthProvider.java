@@ -1,6 +1,6 @@
-package com.projet.springsecurity.springsecurity.service.security;
+package com.projet.springsecurity.service.security;
 
-import com.projet.springsecurity.springsecurity.service.UserService;
+import com.projet.springsecurity.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,7 +1,7 @@
-package com.projet.springsecurity.springsecurity.repo;
+package com.projet.springsecurity.repo;
 
 
-import com.projet.springsecurity.springsecurity.core.model.User;
+import com.projet.springsecurity.core.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

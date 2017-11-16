@@ -1,7 +1,7 @@
-package com.projet.springsecurity.springsecurity.config;
+package com.projet.springsecurity.config;
 
-import com.projet.springsecurity.springsecurity.service.UserService;
-import com.projet.springsecurity.springsecurity.service.security.AppAuthProvider;
+import com.projet.springsecurity.service.UserService;
+import com.projet.springsecurity.service.security.AppAuthProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.Http401AuthenticationEntryPoint;
 import org.springframework.context.annotation.Bean;

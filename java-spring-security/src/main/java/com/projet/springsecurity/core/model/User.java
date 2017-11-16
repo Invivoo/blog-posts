@@ -1,4 +1,4 @@
-package com.projet.springsecurity.springsecurity.core.model;
+package com.projet.springsecurity.core.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

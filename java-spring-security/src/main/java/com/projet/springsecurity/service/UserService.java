@@ -1,7 +1,8 @@
-package com.projet.springsecurity.springsecurity.service;
+package com.projet.springsecurity.service;
 
 
-import com.projet.springsecurity.springsecurity.repo.UserRepository;
+
+import com.projet.springsecurity.repo.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
