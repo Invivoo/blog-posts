@@ -1,7 +1,6 @@
 package com.projet.springsecurity.service;
 
-
-
+import com.projet.springsecurity.core.model.User;
 import com.projet.springsecurity.repo.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,11 +24,13 @@ public class UserService implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        Objects.requireNonNull(email);
-        return userRepository.findUserWithName(email)
+        Objects.requireNonNull(username);
+        User user = userRepository.findUserWithName(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+
+        return user;
     }
 
 }

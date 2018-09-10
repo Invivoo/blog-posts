@@ -1,0 +1,22 @@
+# H2 Web Console (H2ConsoleProperties)
+spring:
+      h2:
+         console:
+                 enabled: true # Whether to enable the console.
+                 path: /h2-console    # Path at which the console is available.
+      jpa:
+          database-platform: org.hibernate.dialect.H2Dialect
+          hibernate:
+            ddl-auto: create-drop
+          properties:
+            hibernate:
+              show_sql: true
+              use_sql_comments: true
+              format_sql: true
+
+# Datasource
+      datasource:
+           url: jdbc:h2:mem:testdb
+           username: sa
+           password:
+           driver-class-name: org.h2.Driver
