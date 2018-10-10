@@ -1,4 +1,4 @@
-package com.invivoo.webapp.domain;
+package com.invivoo.webapp.domain.developer;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.query.Param;
