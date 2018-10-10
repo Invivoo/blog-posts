@@ -1,4 +1,4 @@
-package com.invivoo.webapp.model;
+package com.invivoo.webapp.domain.developer;
 
 public class Project {
 
