@@ -15,7 +15,7 @@ import com.invivoo.webapp.domain.DeveloperService;
 public class DeveloperController {
 
     @Autowired
-    DeveloperService developerService;
+    private DeveloperService developerService;
 
     @RequestMapping(path = "/findByAgeAndProjectName", method = RequestMethod.GET)
     public List<Developer> findByAgeAndProjectName(@RequestParam("age") int age,
