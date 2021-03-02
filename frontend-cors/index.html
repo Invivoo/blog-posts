@@ -1,0 +1,17 @@
+<script>
+ function callHost(host)
+ {
+     var xhr=new XMLHttpRequest();
+     xhr.open("PUT", "http://host"+host+":7771/cors");
+
+     xhr.onreadystatechange = function () {
+         if (xhr.readyState === 4) {
+             console.log(xhr.status);
+             console.log(xhr.responseText);
+     }};
+
+     xhr.send();
+ }
+</script>
+<div onClick='javascript:callHost("a")'>Call HOST A</div>
+<div onClick='callHost("b")'>Call HOST B</div>
